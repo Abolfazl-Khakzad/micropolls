@@ -1,0 +1,32 @@
+{
+  "site": {
+    "title": "MicroPolls",
+    "create": "Crea sondaggio",
+    "discover": "Scopri i sondaggi",
+    "trending": "Popolari",
+    "language": "Lingua"
+  },
+  "create": {
+    "placeholder_question": "Scrivi la tua domanda...",
+    "option": "Opzione {{count}}",
+    "add_option": "Aggiungi opzione",
+    "create_button": "Crea sondaggio",
+    "success": "Sondaggio creato con successo!"
+  },
+  "poll": {
+    "vote": "Vota",
+    "votes": "{{count}} voti",
+    "share": "Condividi",
+    "results": "Risultati",
+    "copied": "Link copiato!"
+  },
+  "navbar": {
+    "home": "Home",
+    "create": "Crea",
+    "discover": "Scopri"
+  },
+  "meta": {
+    "default_title": "MicroPolls — Crea e condividi sondaggi istantanei",
+    "default_description": "Crea sondaggi brevi e virali in pochi secondi e condividili con chiunque."
+  }
+}

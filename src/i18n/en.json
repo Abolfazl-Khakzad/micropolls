@@ -1,0 +1,32 @@
+{
+  "site": {
+    "title": "MicroPolls",
+    "create": "Create Poll",
+    "discover": "Discover Polls",
+    "trending": "Trending",
+    "language": "Language"
+  },
+  "create": {
+    "placeholder_question": "Type your question...",
+    "option": "Option {{count}}",
+    "add_option": "Add option",
+    "create_button": "Create Poll",
+    "success": "Poll created successfully!"
+  },
+  "poll": {
+    "vote": "Vote",
+    "votes": "{{count}} votes",
+    "share": "Share",
+    "results": "Results",
+    "copied": "Link copied!"
+  },
+  "navbar": {
+    "home": "Home",
+    "create": "Create",
+    "discover": "Discover"
+  },
+  "meta": {
+    "default_title": "MicroPolls — Create and share instant polls",
+    "default_description": "Make short, viral polls in seconds and share them with anyone."
+  }
+}
