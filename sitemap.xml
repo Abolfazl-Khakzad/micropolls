@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://micropolls.vercel.app/</loc>
+  </url>
+  <url>
+    <loc>https://micropolls.vercel.app/create</loc>
+  </url>
+  <url>
+    <loc>https://micropolls.vercel.app/discover</loc>
+  </url>
+</urlset>
