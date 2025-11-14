@@ -181,14 +181,8 @@ export default function App() {
               }
             />
 
-            <Route
-              path="/poll"
-              element={
-                <ProtectedRoute user={user}>
-                  <PollView />
-                </ProtectedRoute>
-              }
-            />
+            <Route path="/poll" element={<PollView />} />
+
           </Routes>
         </div>
       </div>
