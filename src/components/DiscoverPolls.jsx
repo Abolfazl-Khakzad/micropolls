@@ -12,6 +12,7 @@ import { db, auth } from "../firebase";
 import { onAuthStateChanged } from "firebase/auth";
 import toast from "react-hot-toast";
 import useSEO from "../hooks/useSEO";
+import { where } from "firebase/firestore";
 
 export default function DiscoverPolls() {
   useSEO({
@@ -39,7 +40,11 @@ export default function DiscoverPolls() {
   useEffect(() => {
     if (!user) return;
 
-    const q = query(collection(db, "polls"), orderBy("createdAt", "desc"));
+    const q = query(
+  collection(db, "polls"),
+  where("creatorId", "==", user.uid),
+  orderBy("createdAt", "desc")
+);
     const unsubscribe = onSnapshot(q, (snapshot) => {
       const loaded = snapshot.docs.map((doc) => {
         const data = doc.data();
