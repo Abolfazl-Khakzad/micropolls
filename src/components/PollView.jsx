@@ -4,6 +4,7 @@ import { db } from "../firebase";
 import { motion, AnimatePresence } from "framer-motion";
 import toast from "react-hot-toast";
 import useSEO from "../hooks/useSEO";
+import { useSearchParams } from "react-router-dom";
 
 export default function PollView({ embedId = null }) {
   
@@ -12,7 +13,9 @@ export default function PollView({ embedId = null }) {
   const [timeLeft, setTimeLeft] = useState(null);
   const [pollEnded, setPollEnded] = useState(false);
 
-  const pollId = embedId || new URLSearchParams(window.location.search).get("id");
+  const [searchParams] = useSearchParams();
+const pollId = embedId || searchParams.get("id");
+
 useSEO({
   title: poll ? poll.question : "Loading Poll...",
   description: "Vote and see real-time poll results."
