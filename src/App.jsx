@@ -139,6 +139,7 @@ export default function App() {
         {/* Routes */}
         <div className="flex-1 px-3 sm:px-6 py-4 flex justify-center">
           <Routes>
+            <Route path="/poll" element={<PollView />} />
             <Route path="/" element={<Landing />} />
             <Route path="/p/:shortId" element={<ShortLinkRedirect />} />
             <Route path="/embed" element={<EmbedPoll />} />
@@ -181,7 +182,7 @@ export default function App() {
               }
             />
 
-            <Route path="/poll" element={<PollView />} />
+            
 
           </Routes>
         </div>
